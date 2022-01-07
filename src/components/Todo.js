@@ -32,7 +32,7 @@ const Todo = () => {
         </div>
         {tasks.map((ele) => {
           return (
-            <div key={ele.id} className="flex my-8 mx-10">
+            <div key={ele.id} className="flex my-8 mx-14">
             
               <h1 className= " text-5xl text-sky-400/100">{ele.data}</h1>
               <i 
@@ -45,7 +45,7 @@ const Todo = () => {
             </div>
           );
         })}
-        <div className="text-3xl my-20 flex items-center  mx-12"><button className="px-20 py-3 font bg-teal-400 text-pink-600 rounded-md" onClick={()=>{
+        <div className="text-3xl my-20 flex items-center  mx-20"><button className="px-20 py-3 font bg-teal-400 text-pink-600 rounded-md" onClick={()=>{
           dispatch(removeTodo())
         }}>Remove All</button></div>
       </div>
